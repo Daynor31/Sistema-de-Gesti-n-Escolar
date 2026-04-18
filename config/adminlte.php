@@ -14,7 +14,7 @@ return [
     |
     */
 
-    'title' => 'Sistema de gestion escolar',
+    'title' => 'Sistema de Gestión Escolar',
     'title_prefix' => '',
     'title_postfix' => '',
 
@@ -301,38 +301,44 @@ return [
     'menu' => [
         // Navbar items:
         [
-            'text' => 'configuracion',
+            'text' => 'Configuración',
             'url' => 'admin/configuracion',
-            'icon' => 'fas fa-fw fa-cogs',
+            'icon' => 'fas fa-fw fa-cog',
             'classes' => 'bg-blue text-white',
         ],
         
         [
-            'text' => 'gestiones',
+            'text' => 'Gestiones',
             'url' => 'admin/gestiones',
             'icon' => 'fas fa-fw fa-tasks',
             'classes' => 'bg-blue text-white',
         ],
 
         [
-            'text' => 'periodos',
+            'text' => 'Periodos',
             'url' => 'admin/periodos',
-            'icon' => 'fas fa-fw fa-calendar-alt',
+            'icon' => 'fas fa-fw fa-calendar',
             'classes' => 'bg-blue text-white',
-
         ],
 
         [
-            'text' => 'niveles',
+            'text' => 'Niveles',
             'url' => 'admin/niveles',
             'icon' => 'fas fa-fw fa-layer-group',
             'classes' => 'bg-blue text-white',
         ],
 
         [
-            'text' => 'grados',
+            'text' => 'Grados',
             'url' => 'admin/grados',
             'icon' => 'fas fa-fw fa-list-alt',
+            'classes' => 'bg-blue text-white',
+        ],
+
+        [
+            'text' => 'Paralelos',
+            'url' => 'admin/paralelos',
+            'icon' => 'fas fa-fw fa-clone',
             'classes' => 'bg-blue text-white',
         ],
 
@@ -342,6 +348,21 @@ return [
             'icon' => 'fas fa-fw fa-clock',
             'classes' => 'bg-blue text-white',
         ],
+
+        [
+            'text' => 'Materias',
+            'url' => 'admin/materias',
+            'icon' => 'fas fa-fw fa-book',
+            'classes' => 'bg-blue text-white',
+        ],
+
+        [
+            'text' => 'Roles',
+            'url' => 'admin/roles',
+            'icon' => 'fas fa-fw fa-user-check',
+            'classes' => 'bg-blue text-white',
+        ],
+
     ],
 
     /*
@@ -431,7 +452,8 @@ return [
                     'type' => 'js',
                     'asset' => true,
                     'location' => 'https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js',
-                ],[
+                ],
+                [
                     'type' => 'css',
                     'asset' => true,
                     'location' => 'https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css',

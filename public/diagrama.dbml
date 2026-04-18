@@ -31,7 +31,20 @@ Table grados{
     nivel_id int [ref: > niveles.id]
 }
 
+Table parelelos {
+    id int [pk, increment]
+    nombre varchar
+    grado_id int [ref: > grados.id]
+}
+
 Table turnos{
     id int [pk, increment]
     nombre varchar
 }
+
+Table  {
+    id int [pk, increment]
+    nombre varchar
+}
+
+

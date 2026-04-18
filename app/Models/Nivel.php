@@ -14,4 +14,5 @@ class Nivel extends Model
     {
         return $this->hasMany(Grado::class, 'nivel_id');
     }
+    
 }
